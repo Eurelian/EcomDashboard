@@ -105,7 +105,7 @@ const useStyles = makeStyles((theme) => ({
 
 	menuHover: {
 		transition: "all 0.2s ease",
-		fontSize: "0.8rem",
+		fontSize: "1rem",
 		fontWeight: "400",
 		marginTop: "5px",
 		marginBottom: "5px",
