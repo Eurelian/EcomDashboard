@@ -133,7 +133,7 @@ const useStyles = makeStyles((theme) => ({
 	},
 	iconButton: {
 		transition: "all 0.3s ease",
-		paddingLeft: "35px",
+		paddingLeft: "30px",
 		color: "#999999",
 		[theme.breakpoints.down(600)]: {
 			color: "#f5f5f5",
@@ -229,7 +229,7 @@ function ResponsiveDrawer(props) {
 					display: "flex",
 					alignItems: "center",
 					justifyContent: "center",
-					minHeight: "65px",
+					minHeight: "75px",
 				}}
 			>
 				<StoreIcon
@@ -360,7 +360,13 @@ function ResponsiveDrawer(props) {
 									onClick={handleMenu}
 									className={classes.iconButton}
 								>
-									<Avatar src={AdminPic} />
+									<Avatar
+										src={AdminPic}
+										style={{
+											width: theme.spacing(4),
+											height: theme.spacing(4),
+										}}
+									/>
 								</IconButton>
 								<Menu
 									id='menu-appbar'
